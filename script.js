@@ -31,7 +31,7 @@ function verificar()
         const minutes = Math.floor((tiempo % 3600) / 60);
         const seconds = tiempo % 60;
         const tiempo_formato = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-        document.getElementById("tiempito").innerText = "Tiempo: " + tiempo_formato;
+        document.getElementById("h1_tiempo").innerText = "Tiempo: " + tiempo_formato;
         tiempo--;
         if(tiempo==-1)
         {
