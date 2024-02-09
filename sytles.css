@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "digital";
+    src: url(digital.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "arcade";
+    src: url(Gameplay.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+#h1_puntaje {
+    font-family: digital;
+}
+
+#h1_tiempo {
+    font-family: digital;
+}
+
+body {
+    justify-content: center;
+    height: 100vh;
+    margin: 2vh;
+    background-color: #18191A;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: arcade;
+}
+
+.contenedor_padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #242526;
+}
+
+.contenedor_caja {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.caja {
+    width: auto;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444749;
+}
+
+.contenedor_btn {
+    margin-bottom: 10px;
+}
+
+.contenedor_list select {
+    width: 100%;
+    padding: 8px;
+    flex-direction: row;
+    margin-bottom: 10px;
+    font-family: arcade;
+}
+
+button {
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    font-size: 2vh;
+    font-family: arcade;
+    color: white;
+    background: black;
+    border-radius: 15px;
+}
+
+.btn_modal {
+    width: auto;
+    height: 5vh; 
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 2vh;
+}
+
+
+#modalxd {
+    border-radius: 10px;
+    font-size: 3vh;
+    text-align: justify;
+    max-width: 63vw;
+    max-height: 63vh;
+}
+.xd
+{
+    text-align: right;
+    font-size: 2vh;
+}
+
+.texto_modal {
+    text-align: center;
+    font-size: 4vh;
+    color: black;
+}
+
+.epico {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    /* Establece el ancho al 100% del contenedor padre */
+    height: auto;
+    /* Ajusta automáticamente la altura para mantener la proporción */
+    max-width: 225px;
+    /* Establece un ancho máximo para la imagen */
+    display: block;
+}
+
+#modalxd::backdrop {
+    background-color: rgba(0, 0, 0, .55);
+}
+
+/* Estilos para pantallas con un ancho máximo de 481px */
+@media screen and (max-width: 481px) {
+    body {
+        margin: 2vh 5px;
+        /* Modifica el margen para pantallas pequeñas */
+    }
+
+    .contenedor_caja {
+        flex-direction: column;
+        /* Cambia a diseño de columna en pantallas pequeñas */
+    }
+
+    .caja {
+        margin: 0 0 10px 0;
+        /* Ajusta el margen inferior de las cajas en pantallas pequeñas */
+    }
+
+    button {
+        width: 30vh;
+        /* Ajusta el ancho para pantallas pequeñas */
+        height: 30vh;
+        /* Ajusta la altura para pantallas pequeñas */
+        font-size: 3vh;
+        /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    .texto_modal {
+        font-size: 3vh;
+    }
+}
+
+/* Estilos para pantallas con un ancho mínimo de 481px y un ancho máximo de 800px */
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    .caja {
+        width: 50%;
+        /* Reduce el ancho de las cajas a la mitad en pantallas medianas */
+    }
+}
